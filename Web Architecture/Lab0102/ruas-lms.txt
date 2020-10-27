@@ -1,0 +1,37 @@
+title RUAS LMS
+
+participant student
+participant staff
+participant LMS_Web
+participant LMS_Backend
+
+student->LMS_Web: login with reg_no, password
+LMS_Web->LMS_Web: save credentials
+LMS_Web-->student: credentials token
+
+student->LMS_Web: register for project
+LMS_Web->LMS_Web: display registration form
+student->LMS_Web: fill project registration form with participant details
+
+LMS_Web->LMS_Backend: save registration details
+LMS_Backend->LMS_Backend: register all participants to project
+LMS_Backend-->LMS_Web: confirm registration
+
+student->LMS_Web: allot room for project
+LMS_Web->LMS_Backend: search for empty table in room
+LMS_Backend-->LMS_Web: alloted table and room details
+
+student->LMS_Web: logout
+LMS_Web->student: close session
+
+staff->LMS_Web: login with staff credentials
+LMS_Web->staff: credentials token
+
+staff->LMS_Web: view registartions
+LMS_Web->LMS_Backend: query for all registrations
+LMS_Backend-->LMS_Web: registration details
+LMS_Web->staff: displayed project registrations
+
+staff->LMS_Web: logout
+LMS_Web->staff: close session
+
