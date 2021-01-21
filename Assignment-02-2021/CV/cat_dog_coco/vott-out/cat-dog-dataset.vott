@@ -1,0 +1,73 @@
+{
+    "name": "cat-dog-dataset",
+    "securityToken": "cat-dog-dataset Token",
+    "sourceConnection": {
+        "name": "cat-dogs-source",
+        "providerType": "localFileSystemProxy",
+        "providerOptions": {
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiMzg3ZmYwM2NkOTNkOTUwY2Q0Y2NkMTIzNjk2NDkzMGRjMGE2NzBmNTJiYzUzZGI4ZTg4NTI3NDFiNjM2MTVlYzNhOTZiNjI0Nzg4NTQwMzkxNzNjODc2YWZjZWQ0ZTFlYjBlYzRmZmRiYTUyYmY4ZjQzMDEyNzhmNzIzMzY5MmI3NDk2YTkyNWQ5YmU5NjlkYWMzMjhhODI2Y2Q3YjIzYzVjNjQyMzdlY2QzMDMyYjk4MDA2YjFlYzQ0OTU3NmQzMDQ4NGMxNDJkZDI3YmM0ODVkYjY2YTlmMzlkZjZiMzkiLCJpdiI6IjZmYTE0YzI4ZDNjYmJjZjA1ZTljNWQzOTk1M2I4MzQxYWJkYTgyMTlhOGE0MjZjOCJ9"
+        },
+        "id": "YSmq7X5zP"
+    },
+    "targetConnection": {
+        "name": "cat-dog-out",
+        "providerType": "localFileSystemProxy",
+        "providerOptions": {
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiYWZhNTBiYmY0MDcyZjFlYjQwMDlkM2JkMDE3Y2U3YWYwYWU5Yzg4MjM1YmMwMmQ1YmI4NDkwNzBiMTgwZGY0NDJlYThiN2RmYTEzMzkyMzllNTJjNzEwZjBmMWY5YmI5MTAzNGIwNDVlNWQwZjY1NGZkNmU3YzYxYWFmZmFlZWQ0ZDg3Y2Y3ODY3OWI0NGM0YzE2YWQ0MDU0ZjY4MmE2NjZjNDRhNmM2NjNmYjRhOGM0N2ZmNjJhMTRhZjJhY2FhYzAzNDBkNGIzNDU5ZmQzZDg4MDA0YzFhMDhlMjE3YzUiLCJpdiI6ImQwNTQ5NjEzYWQ1ZTViNTA0ZjY4M2IyNjJlNGRlNjY4NmYwYzcxNzlkMjU3M2VhMSJ9"
+        },
+        "id": "CzmGvJNvS"
+    },
+    "videoSettings": {
+        "frameExtractionRate": 15
+    },
+    "tags": [
+        {
+            "name": "cat",
+            "color": "#5db300"
+        },
+        {
+            "name": "dog",
+            "color": "#e81123"
+        }
+    ],
+    "id": "baDnl3swj",
+    "activeLearningSettings": {
+        "autoDetect": false,
+        "predictTag": true,
+        "modelPathType": "coco"
+    },
+    "exportFormat": {
+        "providerType": "vottJson",
+        "providerOptions": {
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiYTQ3N2I4NTRmYjUwNjdiYjViYTI5Yjk2ODkzNWRjODAyNTQwNWE4Y2YwNjBmZjBmYWRkOThkMGRjNzcxZmQ3Y2UxZDM3MDMxZjA5ZDQ5OTdmZmVmYzhmMzQ5ZWI5YjUyIiwiaXYiOiI2ODFhMTE0MDNiYzVkZjI2YzE2Y2EyYzRhMTU4NmEyMGIyYjRkMGM5NjhjYWVjYjgifQ=="
+        }
+    },
+    "version": "2.2.0",
+    "lastVisitedAssetId": "53039e16e453c5089f7f1cf077a731a6",
+    "assets": {
+        "53039e16e453c5089f7f1cf077a731a6": {
+            "format": "jpg",
+            "id": "53039e16e453c5089f7f1cf077a731a6",
+            "name": "000000001319.jpg",
+            "path": "file:D:/University-Work/University-Work-SEM-07/Assignment-02-2021/CV/cat_dog_coco/images/000000001319.jpg",
+            "size": {
+                "width": 518,
+                "height": 600
+            },
+            "state": 2,
+            "type": 1
+        },
+        "e22e4d9b44da25012a83370d95323825": {
+            "format": "jpg",
+            "id": "e22e4d9b44da25012a83370d95323825",
+            "name": "000000018155.jpg",
+            "path": "file:D:/University-Work/University-Work-SEM-07/Assignment-02-2021/CV/cat_dog_coco/images/000000018155.jpg",
+            "size": {
+                "width": 500,
+                "height": 333
+            },
+            "state": 1,
+            "type": 1
+        }
+    }
+}
