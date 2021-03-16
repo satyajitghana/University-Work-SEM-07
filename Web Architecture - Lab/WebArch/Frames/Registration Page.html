@@ -1,0 +1,135 @@
+<html>
+
+<head>
+    <title>
+        Registration
+    </title>
+
+    <script type="text/javascript">
+        function validate()
+        {
+        
+           if( document.myForm.fname.value == "" )
+           {
+              alert( "Please provide your First name!" );
+              document.myForm.fname.focus() ;
+              return false;
+           }
+
+           if( document.myForm.lname.value == "" )
+           {
+              alert( "Please provide your Last name!" );
+              document.myForm.lname.focus() ;
+              return false;
+           }
+           
+           if( document.myForm.email.value == "" )
+           {
+              alert( "Please provide your Email!" );
+              document.myForm.email.focus() ;
+              return false;
+           }
+
+           if( document.myForm.contact.value == "" )
+           {
+              alert( "Please provide your Contact Number!" );
+              document.myForm.contact.focus() ;
+              return false;
+           }
+
+           if( document.myForm.address.value == "" )
+           {
+              alert( "Please provide your Address!" );
+              document.myForm.address.focus() ;
+              return false;
+           }
+
+           if( document.myForm.uname.value == "" )
+           {
+              alert( "Please provide your Username!" );
+              document.myForm.uname.focus() ;
+              return false;
+           }
+
+           if( document.myForm.pword.value == "" )
+           {
+              alert( "Please provide your Password!" );
+              document.myForm.pword.focus() ;
+              return false;
+           }
+
+           
+           
+           if( document.myForm.Zip.value == "" ||
+           isNaN( document.myForm.Zip.value ) ||
+           document.myForm.Zip.value.length != 5 )
+           {
+              alert( "Please provide a zip in the format #####." );
+              document.myForm.Zip.focus() ;
+              return false;
+           }
+           
+           if( document.myForm.Country.value == "-1" )
+           {
+              alert( "Please provide your country!" );
+              return false;
+           }
+           return( true );
+        }
+        </script>
+
+</head>
+<center>
+
+    <body bgcolor="lavender">
+
+        <h1>
+            <font color="red" size="6" face="monotype corsiva">Registration</font>
+        </h1>
+        <form action="G:\SEMESTER-07-NOTES\Assignments\Assignment 2\Solutions\Web Arch Code\Login.html" 
+        name="myForm" onsubmit="return(validate());">
+            <table border="0">
+                <tr>
+                    <td>First name</td>
+                    <td><input type="text" name="fname" /></td>
+                </tr>
+                <tr>
+                    <td>Last name</td>
+                    <td><input type="text" name="lname" /></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input type="text" name="email" /></td>
+                </tr>
+                <tr>
+                    <td>Contact No.</td>
+                    <td><input type="text" name="contact" /></td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td><input type="text" name="address" /></td>
+                </tr>
+                <tr>
+                    <td>Username</td>
+                    <td><input type="text" name="uname" /></td>
+                </tr>
+
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" name="pword" /></td>
+                </tr>
+                <tr>
+                    <td>Payment Option</td>
+                    <td>
+                        <input type="radio" name="Payment" value="cash" />Cash
+                        <input type="radio" name="Payment" value="card" />Card
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"><input type="submit" value="Register" /></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</center>
+</html>

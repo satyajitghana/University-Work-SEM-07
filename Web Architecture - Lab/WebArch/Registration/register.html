@@ -1,0 +1,122 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Registration</title>
+<script type="text/javascript">
+      function validate()
+      {
+    	  if( document.myForm.c_id.value == "" )
+          {
+             alert( "Please provide your c_id!" );
+             document.myForm.c_id.focus() ;
+             return false;
+          }
+         if( document.myForm.name.value == "" )
+         {
+            alert( "Please provide your name!" );
+            document.myForm.name.focus() ;
+            return false;
+         }
+         
+         if( document.myForm.email.value == "" )
+         {
+            alert( "Please provide your Email!" );
+            document.myForm.email.focus() ;
+            return false;
+         }
+         if( document.myForm.pword.value == "" )
+         {
+            alert( "Please provide your password!" );
+            document.myForm.pword.focus() ;
+            return false;
+         }
+         if( document.myForm.dno.value == "" )
+         {
+            alert( "Please provide your Door No.!" );
+            document.myForm.dno.focus() ;
+            return false;
+         }
+         if( document.myForm.street.value == "" )
+         {
+            alert( "Please provide your street!" );
+            document.myForm.street.focus() ;
+            return false;
+         }
+         if( document.myForm.city.value == "" )
+         {
+            alert( "Please provide your city!" );
+            document.myForm.city.focus() ;
+            return false;
+         }
+         if( document.myForm.state.value == "" )
+         {
+            alert( "Please provide your state!" );
+            document.myForm.state.focus() ;
+            return false;
+         }
+         
+         if( document.myForm.zip.value == "" ||
+         isNaN( document.myForm.zip.value ) ||
+         document.myForm.zip.value.length != 5 )
+         {
+            alert( "Please provide a zip in the format #####." );
+            document.myForm.zip.focus() ;
+            return false;
+         }
+         
+        
+         return( true );
+      }
+      </script>
+</head>
+<body bgcolor="floral white">
+<center>
+<font color="red" size="6" face="monotype corsiva"> WELCOME TO SPORT ONLINE </font><br>
+<font color="blue" size="5" > Registration </font>
+<form action="Register" method="post" name="myForm" onsubmit="return(validate());">
+<table>
+<tr>
+<td>Customer ID</td>
+<td><input type="text" name="c_id"></td>
+</tr>
+<tr>
+<td>First Name</td>
+<td><input type="text" name="name"></td>
+</tr>
+<tr>
+<td>Email</td>
+<td><input type="text" name="email"></td>
+</tr>
+<tr>
+<td>Password</td>
+<td><input type="text" name="pword"></td>
+</tr>
+<tr>
+<td>Door No.</td>
+<td><input type="text" name="dno"></td>
+</tr>
+<tr>
+<td>Street.</td>
+<td><input type="text" name="street"></td>
+</tr>
+<tr>
+<td>City</td>
+<td><input type="text" name="city"></td>
+</tr>
+<tr>
+<td>State</td>
+<td><input type="text" name="state"></td>
+</tr>
+<tr>
+<td>Zipcode</td>
+<td><input type="text" name="zip"></td>
+</tr>
+<tr>
+<td colspan="2" align="center"><input type="submit" value="register" ></td>
+</tr>
+</table>
+</form>
+</center>
+
+</body>
+</html>
